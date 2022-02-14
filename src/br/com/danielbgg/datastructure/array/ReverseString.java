@@ -1,4 +1,4 @@
-package br.com.danielbgg.array;
+package br.com.danielbgg.datastructure.array;
 
 public class ReverseString {
 	
@@ -14,9 +14,16 @@ public class ReverseString {
 			return s;
 		}
 	}
+	
+	public static String reverseRecursive(String s) {
+		if (s == null) return null;
+		if (s.length() == 1) return "" + s.charAt(s.length() - 1);
+		return "" + s.charAt(s.length() - 1) + reverseRecursive(s.substring(0, s.length() -1));
+	}
 
 	public static void main(String[] args) {
 		System.out.println(reverse("Hi my name is Daniel"));
+		System.out.println(reverseRecursive("Hi my name is Daniel"));
 		System.out.println(reverse("X"));
 		System.out.println(reverse(""));
 		System.out.println(reverse(null));

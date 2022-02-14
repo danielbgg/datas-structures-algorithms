@@ -1,4 +1,4 @@
-package br.com.danielbgg.stack;
+package br.com.danielbgg.datastructure.stack;
 
 import java.util.Arrays;
 

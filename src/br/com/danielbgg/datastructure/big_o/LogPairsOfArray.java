@@ -1,4 +1,4 @@
-package br.com.danielbgg.big_o;
+package br.com.danielbgg.datastructure.big_o;
 
 public class LogPairsOfArray {
 

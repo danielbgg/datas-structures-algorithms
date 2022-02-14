@@ -1,4 +1,4 @@
-package br.com.danielbgg.question;
+package br.com.danielbgg.datastructure.question;
 
 import java.util.HashMap;
 import java.util.Map;

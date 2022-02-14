@@ -1,4 +1,4 @@
-package br.com.danielbgg.hashtable;
+package br.com.danielbgg.datastructure.hashtable;
 
 import java.util.ArrayList;
 import java.util.Iterator;

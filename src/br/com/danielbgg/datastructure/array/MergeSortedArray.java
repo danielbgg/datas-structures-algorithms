@@ -1,4 +1,4 @@
-package br.com.danielbgg.array;
+package br.com.danielbgg.datastructure.array;
 
 public class MergeSortedArray {
 
