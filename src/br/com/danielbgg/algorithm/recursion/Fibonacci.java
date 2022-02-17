@@ -40,9 +40,10 @@ public class Fibonacci {
 	}
 	
 	
-	public static int fibonacciRecursive(int number) {
+	public int fibonacciRecursive(int number) {
 		//O(2^n)
 		if (number < 2) return number;
+		calculations++;
 		return fibonacciRecursive(number-1) + fibonacciRecursive(number-2); 
 	}
 
@@ -59,11 +60,12 @@ public class Fibonacci {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(fibonacciRecursive(8));
-		System.out.println(fibonacciIterative(8));
+//		System.out.println(fibonacciRecursive(8));
+//		System.out.println(fibonacciIterative(8));
 		
 		Fibonacci fibo = new Fibonacci();
-		System.out.println(fibo.fibonacciDynamicMemoization(40));
+		//System.out.println(fibo.fibonacciDynamicMemoization(40));
+		System.out.println(fibo.fibonacciRecursive(40));
 		System.out.println("calculations: " + fibo.calculations);
 		System.out.println("memo: " + fibo.memo);
 
