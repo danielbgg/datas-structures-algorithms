@@ -98,7 +98,7 @@ public class MinHeapConstruction {
 		list.add(6);
 		list.add(8);
 		list.add(41);
-		MinHeap heap = new MinHeap(list);
+		new MinHeap(list);
 		System.out.println(Arrays.toString(list.toArray()));
 	}
 
